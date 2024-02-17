@@ -82,7 +82,7 @@ function SignInPage({}: Props) {
           </div>
 
           <h2 className="text-xl text-center">
-            "Mentor Personalized Learning → Success!"
+            "Mentor Personalized Learning Success"
           </h2>
         </div>
 

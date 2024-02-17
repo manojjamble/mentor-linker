@@ -77,7 +77,7 @@ const MentorDetailPage: React.FC = () => {
       <div className='w-1/2'>
         <h1 className='text-3xl font-semibold mb-10'>About</h1>
         <p className='text-lg'>
-        I am an accomplished React and Node.js developer with a solid background in JavaScript and a Bachelor's degree in Computer Science. I am passionate about mentoring and sharing my expertise to help others excel in their development journey. Feel free to reach out to me for any inquiries or collaboration opportunities.
+        I am an accomplished React and Node.js developer with a solid background in JavaScript and a Bachelors degree in Computer Science. I am passionate about mentoring and sharing my expertise to help others excel in their development journey. Feel free to reach out to me for any inquiries or collaboration opportunities.
 
         </p>
       </div>
