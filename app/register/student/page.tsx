@@ -75,6 +75,7 @@ const StudentRegisterPage = () => {
     }
   }
 
+  
   const [form, setForm] = React.useState<StudentRegisterForm>({
     name: '',
     email: '',
@@ -247,6 +248,8 @@ const StudentRegisterPage = () => {
           <h1 className="text-3xl font-bold mb-10 mt-4">
             Complete Student Profile
           </h1>
+
+          {/* form container */}
           <div className="flex border-t-2 border-zinc-600 pt-4">
               
               {/* left side */}

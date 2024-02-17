@@ -238,13 +238,16 @@ const TeacherRegisterPage = () => {
           </div>
         </div>
 
-        {/* test form 2 */}
+        {/* Profile form 2 */}
         <div className=" bg-zinc-100 border-xl w-[1300px] h-full  rounded-xl ml-4  p-4  ">
           <h1 className="text-3xl font-bold mb-10 mt-4">
             Complete Mentor Profile{" "}
           </h1>
+
+            {/* form container */}
           <div className="flex border-t-2 border-zinc-600 pt-4">
 
+            {/* left side */}
             <div className="flex w-1/2 flex-col gap-7">
               <span className="flex flex-col">
                 <b>Teaching Style:</b> How would you describe your teaching
@@ -576,7 +579,7 @@ const TeacherRegisterPage = () => {
              
             </div>
 
-            {/* -------------------- */}
+            {/* right side */}
             <div className="flex w-1/2 flex-col gap-7">
             <span className="flex flex-col">
                 <b>Subject: </b>Which subjects can you teach?
@@ -943,14 +946,9 @@ const TeacherRegisterPage = () => {
               </Button>
             </div>
 
-
           </div>
-
         </div>
-
-
       </div>
-
     </div>
   );
 };
