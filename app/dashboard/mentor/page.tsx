@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 // MentorDetailPage.tsx
 
 import React from 'react';
