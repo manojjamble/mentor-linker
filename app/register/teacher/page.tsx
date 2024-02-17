@@ -149,6 +149,7 @@ const TeacherRegisterPage = () => {
   return (
 
     <div className="h-screen w-screen p-5   ">
+      
       {/* topbar */}
       <div className="h-[10vh] w-screen flex bg-white gap-5 items-center fixed">
         <svg
