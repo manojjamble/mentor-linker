@@ -5,7 +5,42 @@ import Card from './card'
 
 type Props = {}
 
+interface MentorData {
+  name: string,
+  image: string,
+  role: string,
+  phone: string,
+  email: string,
+}
+
 const DashboardPage = (props: Props) => {
+
+  const duppyMentordata = [
+    {
+      name: "Swapnil Kapale",
+      image: "pic1.jpg",
+      role: "web dev",
+      phone: "1234567890",
+      email: "email@gmail.com",
+    },
+    {
+      name: "Swapnil Kapale",
+      image: "pic2.jpg",
+      role: "web dev",
+      phone: "1234567890",
+      email: "sdds@gd.ds",
+    },
+    {
+      name: "Swapnil Kapale",
+      image: "pic4.jpg",
+      role: "web dev",
+      phone: "1234567890",
+      email: "sddcf@fdc.as"
+    },
+  ]
+    
+
+
   return (
     <div className='h-screen w-screen bg-white p-5 flex flex-col'>
 
@@ -42,7 +77,7 @@ const DashboardPage = (props: Props) => {
       </div>
       <div className='w-full h-auto '>
 
-        <Card />
+        <Card  />
 
       </div>
 
