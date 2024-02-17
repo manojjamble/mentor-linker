@@ -16,16 +16,19 @@ interface MentorData {
 
 const DashboardPage = (props: Props) => {
 
+  
+  // Mentor dummy Data for testing
+
   const MentorData = [
     {
-      name: "Murtuza Kapasi",
+      name: "Rachel Smith",
       image: "pic1.jpg",
       role: "Web Developer",
       phone: "1234567890",
       email: "murtuza@gmail.com",
     },
     {
-      name: "Swapnil Kapale",
+      name: "Jenny Doe",
       image: "pic2.jpg",
       role: "Frontend Developer",
       phone: "1234567890",
@@ -95,7 +98,7 @@ const DashboardPage = (props: Props) => {
 
   return (
     <div className='h-screen w-screen bg-white p-5 flex flex-col overflow-x-hidden'>
-      <div className="w-full h-28 rounded-2xl shadow-2xl bg-zinc-800 text-white pl-10 flex items-center gap-4" >
+      <div className="w-full h-[20vh] rounded-2xl shadow-2xl bg-zinc-800 text-white pl-10 flex items-center gap-4" >
         <Avatar className='h-14 w-14 border-2 border-white'>
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
@@ -120,11 +123,11 @@ const DashboardPage = (props: Props) => {
               </path>
             </g>
           </svg>
-          Logout
+          <Link href='/signin'>Logout</Link>
         </button>
       </div>
-      <div className='p-5 w-full h-auto'>
-        <h1 className='font-bold text-3xl'>Mentors <span className='text-violet-500'>100</span></h1>
+      <div className='p-5 w-full h-[80vh]'>
+        <h1 className='font-bold text-3xl'>Mentors <span className='text-violet-500'>{MentorData.length}</span></h1>
       </div>
       <div className='w-full h-auto '>
 

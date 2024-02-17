@@ -5,6 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Value } from "@radix-ui/react-select";
 import { checkCustomRoutes } from "next/dist/lib/load-custom-routes";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const StudentRegisterPage = () => {
 
@@ -944,7 +945,7 @@ const StudentRegisterPage = () => {
               </span>
 
               <Button className=" text-white w-72 mt-10 ml-40 p-2 rounded-md" onClick={handleRegister}>
-                Register 
+                 <Link href="/register/success">Register</Link>
               </Button>
             </div>
 
