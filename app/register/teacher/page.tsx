@@ -1,10 +1,9 @@
+//  Purpose: This file contains the teacher registration page. It contains the form for the teacher to fill in their details and preferences. The form is divided into two parts. The first part contains the personal information of the teacher and the second part contains the preferences of the teacher. The form is divided into two parts to make it easier for the teacher to fill in the details. The form contains the following fields:
+
 "use client";
 import React from "react";
-import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Value } from "@radix-ui/react-select";
-import { checkCustomRoutes } from "next/dist/lib/load-custom-routes";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface TeacherRegisterForm {
   name: string;
@@ -142,15 +141,27 @@ const TeacherRegisterPage = () => {
   });
 
   const handleRegister = () => {
-    console.log(form);
+    //  fetch("http://localhost:3000/api/register", {
+    //   method: "POST",
+    //   body: JSON.stringify(form),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // }).then((res) => {
+    //   if (res.ok) {
+    //     return res.json();
+    //   }
+    //   return res.json().then((json) => Promise.reject(json));
+    // });
   }
 
 
   return (
 
     <div className="h-screen w-screen p-5   ">
+      
       {/* topbar */}
-      <div className="h-[10vh] w-screen flex  gap-5 items-center fixed">
+      <div className="h-[10vh] w-screen flex bg-white gap-5 items-center fixed">
         <svg
           width="48"
           height="48"
@@ -162,13 +173,13 @@ const TeacherRegisterPage = () => {
             d="m333 276l80-81c7-7 15-16 23-26c8-9 17-17 26-24c17-15 37-28 62-28c22 0 41 10 55 23s22 32 22 54c0 9-1 19-4 26c-7 14-13 24-19 32c-3 4-6 8-6 12c0 3 0 6 2 7c11 27 19 50 24 78c3 11 9 16 19 16c4 0 8-1 12-4c8-5 15-13 22-21c4-4 7-8 9-10c36-35 57-85 57-136c0-54-22-102-57-137c-35-34-84-57-136-57S422 21 387 58L250 194c-36 37-56 85-56 136c0 15 6 46 16 75c10 28 23 53 40 53c9 0 28-15 44-32s32-36 32-43c0-5-4-11-8-20c-5-9-7-20-7-33c0-20 8-40 22-54m-3 384l137-136c36-35 56-86 56-137c0-15-6-45-16-74c-9-28-23-54-40-54c-7 0-28 16-43 33c-17 17-33 35-33 42c0 5 3 13 8 21c5 9 9 19 9 32c-1 20-9 40-23 56l-81 80c-7 8-15 16-23 25l-25 25c-17 16-38 27-63 27c-42 0-76-33-76-76c0-10 2-19 5-26c6-14 12-24 19-32c3-4 4-8 4-11c0-2-1-4-2-8c-12-27-19-50-24-78c-2-5-3-9-6-11c-3-4-8-5-13-5c-4 0-7 1-11 4c-8 5-16 13-23 21c-3 4-7 7-9 9c-36 36-57 86-57 137c0 53 21 102 57 137c35 35 83 56 136 56c52 0 102-20 137-57"
           />
         </svg>
-        <h1 className="text-4xl font bold">MentorLink</h1>
+        <h1 className="text-4xl font bold ">MentorLink</h1>
       </div>
 
       <div className="flex  w-screen ml-1/3 mt-[100px]">
 
       {/* form 1 */}
-        <div className="h-[85vh]  border-2   border-zinc-400 p-5 w-1/4 rounded-xl fixed  ">
+        <div className="h-[90vh]  border-2   border-zinc-400 p-5 w-[424px] rounded-xl   ">
           <h1 className="text-3xl  font-bold mb-10"> Personal Information</h1>
 
           <div className="flex flex-col gap-3 ">
@@ -237,13 +248,16 @@ const TeacherRegisterPage = () => {
           </div>
         </div>
 
-        {/* test form 2 */}
-        <div className=" bg-zinc-100 border-xl w-[1300px] h-full  rounded-xl ml-[500px] p-4  ">
+        {/* Profile form 2 */}
+        <div className=" bg-zinc-100 border-xl w-[1300px] h-full  rounded-xl ml-4  p-4  ">
           <h1 className="text-3xl font-bold mb-10 mt-4">
             Complete Mentor Profile{" "}
           </h1>
+
+            {/* form container */}
           <div className="flex border-t-2 border-zinc-600 pt-4">
 
+            {/* left side */}
             <div className="flex w-1/2 flex-col gap-7">
               <span className="flex flex-col">
                 <b>Teaching Style:</b> How would you describe your teaching
@@ -575,7 +589,7 @@ const TeacherRegisterPage = () => {
              
             </div>
 
-            {/* -------------------- */}
+            {/* right side */}
             <div className="flex w-1/2 flex-col gap-7">
             <span className="flex flex-col">
                 <b>Subject: </b>Which subjects can you teach?
@@ -938,18 +952,13 @@ const TeacherRegisterPage = () => {
               </span>
 
               <Button className=" text-white w-72 mt-10 ml-40 p-2 rounded-md" onClick={handleRegister}>
-                Register 
+                <Link href="/register/success">Register</Link>
               </Button>
             </div>
 
-
           </div>
-
         </div>
-
-
       </div>
-
     </div>
   );
 };

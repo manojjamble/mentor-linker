@@ -1,3 +1,5 @@
+// Code: Register page for students and teachers
+
 import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
@@ -8,8 +10,6 @@ const RegisterPage = () => {
     <div className='flex h-screen w-screen p-5  '>
 
       <div className='h-full w-1/2 flex flex-col justify-center items-center bg-[#fbfbfb] rounded-l-2xl shadow-xl border-2 gap-4'>  
-        
-
           <Image
             src="/teacher.svg"
             alt="mentorship"
