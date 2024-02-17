@@ -1,3 +1,5 @@
+// Purpose: This file contains the student registration page.
+
 "use client";
 import React from "react";
 import { Input } from "@/components/ui/input";

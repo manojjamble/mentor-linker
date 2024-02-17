@@ -14,7 +14,7 @@ function SignInPage({}: Props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState("This is beta phase use admin as usename and password");
 
 
   const router = useRouter();
@@ -109,7 +109,7 @@ function SignInPage({}: Props) {
                 />
       
                 <h3 className="text-red-500">{error}</h3>
-              
+
                 <Button 
                   className="w-96 mt-4"
                   onClick = {handleSignIn}

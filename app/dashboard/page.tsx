@@ -2,6 +2,7 @@ import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Card from './card'
 import Link from 'next/link'
+import MentorDetail from './mentor/mentorDetail'
 
 
 type Props = {}
@@ -25,7 +26,7 @@ const DashboardPage = (props: Props) => {
       image: "pic1.jpg",
       role: "Web Developer",
       phone: "1234567890",
-      email: "murtuza@gmail.com",
+      email: "Click this card to see more details about this mentor.",
     },
     {
       name: "Jenny Doe",
@@ -141,8 +142,11 @@ const DashboardPage = (props: Props) => {
       </div>
 
 
-      <div className='p-5 w-full h-auto'>
-        <h1 className='font-bold text-3xl'>Mentors <span className='text-violet-500'>100</span></h1>
+      <div className='p-5 w-full h-auto flex gap-20'>
+        <h1 className='font-bold text-3xl'>Mentors <span className='text-violet-500'>{MentorData.length}</span></h1>
+        <div className='bg-red-200 rounded-xl p-2'>
+          <h1 className='text-red-600 '>This app is in building phase dummy data is shown below</h1>
+        </div>
       </div>
       <div className='w-full h-auto '>
 

@@ -1,3 +1,5 @@
+//  Purpose: This file contains the teacher registration page. It contains the form for the teacher to fill in their details and preferences. The form is divided into two parts. The first part contains the personal information of the teacher and the second part contains the preferences of the teacher. The form is divided into two parts to make it easier for the teacher to fill in the details. The form contains the following fields:
+
 "use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
@@ -139,7 +141,18 @@ const TeacherRegisterPage = () => {
   });
 
   const handleRegister = () => {
-    console.log(form);
+    //  fetch("http://localhost:3000/api/register", {
+    //   method: "POST",
+    //   body: JSON.stringify(form),
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // }).then((res) => {
+    //   if (res.ok) {
+    //     return res.json();
+    //   }
+    //   return res.json().then((json) => Promise.reject(json));
+    // });
   }
 
 
