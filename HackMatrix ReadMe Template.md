@@ -14,17 +14,17 @@ The solution should help solve the lack of mentorship in education. Many student
 - MongoDb
 - Github
 - Google Colab
-- tensorflow Js
-- NLP
+- tensorflow
+
 
 
 ## Screenshots
 
 **Hero  image** 
-![alt text](/Screenshots/image.png)
+![alt text](/Screenshots/hero.png)
 
 **Register Form**
-![alt text](/Screenshots/image-1.png)
+![alt text](/Screenshots/register.png)
 
 **Mentor Register Form**
 ![alt text](/Screenshots/mentorRegister.png)
@@ -39,7 +39,7 @@ The solution should help solve the lack of mentorship in education. Many student
 ![alt text](/Screenshots/signIn.png)
 
 **Dashboard**
-
+![alt text](/Screenshots/dashboard.png)
 
 **Detailed Mentor Description**
 ![alt text](/Screenshots/mentorDetail.png)
