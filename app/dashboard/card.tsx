@@ -1,36 +1,42 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
-type Props = {}
-
-
-interface MentorData {
-  name: string,
-  image: string,
-  role: string,
-  phone: string,
-  email: string,
+interface CardProps {
+  mentorData: {
+    name: string;
+    image: string;
+    role: string;
+    phone: string;
+    email: string;
+  };
 }
 
-function Card({}: Props) {
+const Card: React.FC<CardProps> = ({ mentorData }) => {
+  const { name, image, role, phone, email } = mentorData;
+
   return (
-    <div className='h-96 w-80 bg-[#f7f7fb] p-10 rounded-xl shadow-lg flex flex-col justify-center items-center gap-4 border-2'>
-      {/* Mentor dp */}
-      <div className='rounded-full overflow-hidden border-4 border-white'>
-        <Imag
-              src= {mentor.image}
-              alt="mentorship"
-              width={150}
-              height={150}
-        />
-      </div>
-      <h1 className='text-lg font-bold'>{}</h1>
-      <h1 className='text-lg font-bold bg-blue-200  rounded-xl  w-44 text-center text-blue-600 '>Web dev</h1>
-      <h1>(915) 6525656</h1>
-      <h1 className='text-blue-700'>MurtuzaKapasi@gmail.com</h1>
-  
-    </div>
-  )
-}
+    <div className='w-1/4 p-4 justify-center items-center'>
+      <div className="h-96 w-80 bg-[#f7f7fb] p-10 rounded-xl shadow-lg flex flex-col justify-space-around items-center gap-4 border-2 border-zinc-300">
+        {/* Mentor dp */}
+        <div className="rounded-full h-[120px] object-cover border-2 border-zinc-300">
+          <Image
+            src={`/profile/${image}`}
+            alt="mentorship"
+            width={120}
+            height={120}
+            className="rounded-full object-cover h-[120px] w-[120px] "
+          />
+        </div>
 
-export default Card
+        <h1 className="text-lg font-bold">{name}</h1>
+        <h1 className="text-md p-2 font-bold bg-blue-200 rounded-xl w-44 text-center text-blue-600">
+          {role}
+        </h1>
+        <h1>{phone}</h1>
+        <h1 className="text-blue-700">{email}</h1>
+      </div>
+    </div>
+  );
+};
+
+export default Card;

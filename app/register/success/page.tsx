@@ -33,7 +33,7 @@ function SuccessPage({}: Props) {
         <h1 className='text-2xl font-bold'>Registration Successful</h1>
         <button className= "w-64 h-12 rounded-lg text-white font-bold bg-zinc-900 ">
           <Link href="/signin">
-              Sighn In
+              Sign In
           </Link>
         </button>
 
