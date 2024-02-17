@@ -20,6 +20,29 @@ The solution should help solve the lack of mentorship in education. Many student
 
 ## Screenshots
 
+**Hero  image** 
+![alt text](/Screenshots/image.png)
+
+**Register Form**
+![alt text](/Screenshots/image-1.png)
+
+**Mentor Register Form**
+![alt text](/Screenshots/mentorRegister.png)
+
+**Students Register Form**
+![alt text](/Screenshots/studentsRegistration.png)
+
+**Success Page**
+![alt text](/Screenshots/successPage.png)
+
+**Sign In**
+![alt text](/Screenshots/signIn.png)
+
+**Dashboard**
+
+
+**Detailed Mentor Description**
+![alt text](/Screenshots/mentorDetail.png)
 
 ## Deployed Url
 [Link to Deployed Solution](gfgpccoe.in)
