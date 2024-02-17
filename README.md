@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HM0035 Techstars
 
-## Getting Started
+## Develop a streamlined platform for addressing the lack of personalized mentorship using efficient mentor matching, and ensuring tailored and effective mentorship experiences.
 
-First, run the development server:
+## Description
+The solution should help solve the lack of mentorship in education. Many students struggle to find mentors aligned with their goals and interests. Existing systems often lack efficiency and user-friendliness, affecting mentor-student connections. Because there is not any such platform, students cannot get guidance specific to their individual needs. This problem requires the development of a system that allows students to easily input their preferences and provides a smoother process for mentor matching, ensuring personalized, effective mentorship experiences for educational and career growth.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Connection Making:
+* Implementing a feature for students to connect with mentors.
+* Including a button or option on the mentor's detailed page to initiate a connection.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+User Interaction:
+* Incorporating buttons for user interactions, such as logging out.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Routing:
+* Implementing routing for navigation between different pages or components.
 
-## Learn More
+Dashboard:
+- Displaying mentor profiles with details such as name, image, role, phone, and email.
+Showing a list of mentors with profile cards on the dashboard.
 
-To learn more about Next.js, take a look at the following resources:
+Mentor Profile Card:
+* Displaying mentor information in a card format.
+Including mentor's name, image, role, phone, and email.
+Clickable cards for more detailed mentor information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Responsive Design:
+* Ensuring that the web page layout is responsive across various screen sizes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Navigation Bar:
+* Displaying user information in the navigation bar, including the user's name and avatar.
+Including filter and logout icons at the end of the navigation bar.
 
-## Deploy on Vercel
+Detailed Mentor Page:
+* Creating a detailed mentor page that opens on clicking a mentor's profile card.
+Displaying mentor image, detailed information, skills, qualifications, and feedback or reviews.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Dummy Data:
+* Generating dummy data for mentor profiles.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Styling:
+* Applying styles and designs to enhance the visual appeal of the application.
+Implementing rounded images and styling mentor profile cards.
+
+User Interaction:
+* Incorporating buttons for user interactions, such as 
+logging out.
+
+Animation:
+* Implementing animations for visual appeal, such as the logout icon animation.
+
+
+## Tech Stack
+- Next Js
+- MongoDb
+- Github
+- Google Colab
+- tensorflow
+
+
+
+## Screenshots
+
+**Hero  image** 
+![alt text](/Screenshots/hero.png)
+
+**Register Form**
+![alt text](/Screenshots/register.png)
+
+**Mentor Register Form**
+![alt text](/Screenshots/mentorRegister.png)
+
+**Students Register Form**
+![alt text](/Screenshots/studentsRegistration.png)
+
+**Success Page**
+![alt text](/Screenshots/successPage.png)
+
+**Sign In**
+![alt text](/Screenshots/signIn.png)
+
+**Dashboard**
+![alt text](/Screenshots/dashboard.png)
+
+**Detailed Mentor Description**
+![alt text](/Screenshots/mentorDetail.png)
+
+## Deployed Url
+[Link to Deployed Solution](gfgpccoe.in)
+
+## Video Url
+[Link to Demo Video](https://drive.google.com/file/d/1VA5Hsri9ZdWWPoDqNLTmzylrPzfuBvjZ/view)
+
+## Remarks
+- Any additional things you want to share
