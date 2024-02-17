@@ -1,6 +1,7 @@
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Card from './card'
+import Link from 'next/link'
 
 
 type Props = {}
@@ -15,7 +16,7 @@ interface MentorData {
 
 const DashboardPage = (props: Props) => {
 
-  const duppyMentordata = [
+  const MentorData = [
     {
       name: "Murtuza Kapasi",
       image: "pic1.jpg",
@@ -129,8 +130,8 @@ const DashboardPage = (props: Props) => {
 
         {/* displaying mentor cards */}
         <div className=' flex flex-wrap w-auto h-auto '>
-          {duppyMentordata.map((mentorData, index) => (
-            <Card key={index} mentorData={mentorData} />
+          {MentorData.map((mentorData, index) => (
+              <Card key={index} mentorData={mentorData} />
           ))}
         </div>
 
