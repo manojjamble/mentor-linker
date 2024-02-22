@@ -44,6 +44,11 @@ export async function POST(request: NextRequest) {
             message: "Successfully logged in.",
             token
         });
+
+        response.cookies.set("token", token, {
+            httpOnly: true
+        });
+
         // Return success response with token
         return response;
     } catch (error) {
